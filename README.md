@@ -28,17 +28,6 @@ O projeto foi construído com tecnologias modernas do ecossistema JavaScript, pr
 - Animações suaves e microinterações
 - Layout responsivo para desktop e mobile
 
-## 📁 Estrutura do Projeto
-
-src/
-├─ components/ # Componentes reutilizáveis
-├─ components/ui/ # Componentes do shadcn/ui
-├─ pages/ # Páginas do portfólio
-├─ hooks/ # Hooks customizados
-├─ lib/ # Utilitários e helpers
-├─ styles/ # Estilos globais
-└─ main.tsx # Entry point da aplicação
-
 ## 🛠️ Como rodar o projeto localmente
 
 ```bash
