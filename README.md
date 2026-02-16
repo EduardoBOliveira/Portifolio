@@ -1,73 +1,75 @@
-# Welcome to your Lovable project
+# 💼 Portfólio – Desenvolvedor Full Stack
 
-## Project info
+Este é meu portfólio profissional, desenvolvido para apresentar projetos, experiências e habilidades como **Desenvolvedor Full Stack**, com foco em performance, design moderno e boas práticas de engenharia de software.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+## ✨ Visão Geral
 
-## How can I edit this code?
+O projeto foi construído com tecnologias modernas do ecossistema JavaScript, priorizando:
 
-There are several ways of editing your application.
+- Código limpo e organizado
+- Interface moderna e responsiva
+- Performance e SEO
+- Facilidade de manutenção e deploy
 
-**Use Lovable**
+## 🚀 Tecnologias Utilizadas
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+- **React**
+- **TypeScript**
+- **Vite**
+- **Tailwind CSS**
+- **shadcn/ui**
+- **ESLint**
+- **PostCSS**
 
-Changes made via Lovable will be committed automatically to this repo.
+## 🎨 Design & UI
 
-**Use your preferred IDE**
+- Dark mode via `class`
+- Tipografia personalizada com **Inter** e **Sora**
+- Animações suaves e microinterações
+- Layout responsivo para desktop e mobile
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## 📁 Estrutura do Projeto
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+src/
+├─ components/ # Componentes reutilizáveis
+├─ components/ui/ # Componentes do shadcn/ui
+├─ pages/ # Páginas do portfólio
+├─ hooks/ # Hooks customizados
+├─ lib/ # Utilitários e helpers
+├─ styles/ # Estilos globais
+└─ main.tsx # Entry point da aplicação
 
-Follow these steps:
+## 🛠️ Como rodar o projeto localmente
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+```bash
+# Instalar dependências
+npm install
+# ou
+pnpm install
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Rodar em ambiente de desenvolvimento
 npm run dev
+# ou
+pnpm dev
+A aplicação ficará disponível em:
+
+http://localhost:8080
+📦 Build para produção
+npm run build
+# ou
+pnpm build
+
 ```
 
-**Edit a file directly in GitHub**
+---
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## 🌐 Deploy
 
-**Use GitHub Codespaces**
+O projeto está preparado para deploy na Vercel, sem dependências específicas de plataforma.
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## 📄 Licença
 
-## What technologies are used for this project?
+Este projeto é de uso pessoal e profissional.
+Sinta-se à vontade para se inspirar, mas evite cópia direta de conteúdo ou identidade visual.
 
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+Desenvolvido com foco em qualidade, clareza e evolução contínua 🚀
