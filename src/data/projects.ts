@@ -1,3 +1,6 @@
+import finwiseImg from '@/assets/finwise.png.asset.json';
+import fitlifeImg from '@/assets/fitlife.png.asset.json';
+
 export interface Project {
   id: string;
   title: string;
@@ -40,8 +43,8 @@ export const projects: Project[] = [
     ],
     status: 'completed',
     category: 'SaaS',
-    thumbnail: '/placeholder.svg',
-    images: ['/placeholder.svg', '/placeholder.svg'],
+    thumbnail: finwiseImg.url,
+    images: [finwiseImg.url],
     githubUrl: 'https://github.com/EduardoBOliveira/finwise-app',
     liveUrl: 'https://finwise-app-topaz.vercel.app/',
     year: '2025'
@@ -68,8 +71,8 @@ export const projects: Project[] = [
     ],
     status: 'completed',
     category: 'SaaS',
-    thumbnail: '/placeholder.svg',
-    images: ['/placeholder.svg'],
+    thumbnail: fitlifeImg.url,
+    images: [fitlifeImg.url],
     githubUrl: 'https://github.com/EduardoBOliveira/FitLife-App',
     liveUrl: 'https://fit-life-app-two.vercel.app/',
     year: '2025'

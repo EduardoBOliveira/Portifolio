@@ -4,6 +4,7 @@ import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Code2, Lightbulb, Users, Rocket, Download } from 'lucide-react';
+import eduardoFoto from '@/assets/eduardo.jpg.asset.json';
 
 const techStack = [
   { category: 'Frontend', items: ['React', 'TypeScript', 'Next.js', 'TailwindCSS', 'Framer Motion', 'ViteJs'] },
@@ -83,11 +84,11 @@ const About = () => {
               className="relative"
             >
               <div className="aspect-square rounded-3xl glass overflow-hidden">
-                <div className="w-full h-full bg-gradient-to-br from-primary/20 via-muted to-primary/10 flex items-center justify-center">
-                  <div className="w-32 h-32 rounded-full bg-primary/10 border-2 border-primary/20 flex items-center justify-center">
-                    <span className="font-display font-bold text-primary text-5xl">D</span>
-                  </div>
-                </div>
+                <img
+                  src={eduardoFoto.url}
+                  alt="Foto profissional de Eduardo"
+                  className="w-full h-full object-cover"
+                />
               </div>
               
               {/* Floating badges */}

@@ -34,14 +34,25 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
         <div className="glass rounded-2xl overflow-hidden hover-lift glass-hover">
           {/* Thumbnail */}
           <div className="aspect-video relative overflow-hidden bg-muted">
-            <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-primary/5" />
-            <div className="absolute inset-0 flex items-center justify-center">
-              <div className="w-16 h-16 rounded-2xl bg-primary/10 border border-primary/20 flex items-center justify-center">
-                <span className="font-display font-bold text-primary text-2xl">
-                  {project.title.charAt(0)}
-                </span>
-              </div>
-            </div>
+            {project.thumbnail && project.thumbnail !== '/placeholder.svg' ? (
+              <img
+                src={project.thumbnail}
+                alt={`Prévia do projeto ${project.title}`}
+                loading="lazy"
+                className="absolute inset-0 w-full h-full object-cover object-top"
+              />
+            ) : (
+              <>
+                <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-primary/5" />
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <div className="w-16 h-16 rounded-2xl bg-primary/10 border border-primary/20 flex items-center justify-center">
+                    <span className="font-display font-bold text-primary text-2xl">
+                      {project.title.charAt(0)}
+                    </span>
+                  </div>
+                </div>
+              </>
+            )}
             
             {/* Hover overlay */}
             <div className="absolute inset-0 bg-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">

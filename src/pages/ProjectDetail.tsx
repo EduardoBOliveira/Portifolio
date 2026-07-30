@@ -116,13 +116,21 @@ const ProjectDetail = () => {
             transition={{ duration: 0.5, delay: 0.1 }}
             className="aspect-video rounded-2xl glass overflow-hidden"
           >
-            <div className="w-full h-full bg-gradient-to-br from-primary/10 via-muted to-primary/5 flex items-center justify-center">
-              <div className="w-24 h-24 rounded-3xl bg-primary/10 border border-primary/20 flex items-center justify-center">
-                <span className="font-display font-bold text-primary text-4xl">
-                  {project.title.charAt(0)}
-                </span>
+            {project.thumbnail && project.thumbnail !== '/placeholder.svg' ? (
+              <img
+                src={project.thumbnail}
+                alt={`Prévia do projeto ${project.title}`}
+                className="w-full h-full object-cover object-top"
+              />
+            ) : (
+              <div className="w-full h-full bg-gradient-to-br from-primary/10 via-muted to-primary/5 flex items-center justify-center">
+                <div className="w-24 h-24 rounded-3xl bg-primary/10 border border-primary/20 flex items-center justify-center">
+                  <span className="font-display font-bold text-primary text-4xl">
+                    {project.title.charAt(0)}
+                  </span>
+                </div>
               </div>
-            </div>
+            )}
           </motion.div>
         </div>
       </section>
