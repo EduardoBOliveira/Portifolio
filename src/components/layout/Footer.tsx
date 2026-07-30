@@ -1,17 +1,29 @@
-import { Link } from 'react-router-dom';
-import { Github, Linkedin, Mail, ArrowUpRight } from 'lucide-react';
+import { Link } from "react-router-dom";
+import { Github, Linkedin, Mail, ArrowUpRight } from "lucide-react";
 
 const socialLinks = [
-  { icon: Github, label: 'GitHub', href: 'https://github.com/EduardoBOliveira' },
-  { icon: Linkedin, label: 'LinkedIn', href: 'https://www.linkedin.com/in/eduardo-bezerra-205069234/' },
-  { icon: Mail, label: 'Email', href: 'mailto:edubezerra_oliveira@hotmail.com' },
+  {
+    icon: Github,
+    label: "GitHub",
+    href: "https://github.com/EduardoBOliveira",
+  },
+  {
+    icon: Linkedin,
+    label: "LinkedIn",
+    href: "https://www.linkedin.com/in/eduardo-bezerra-205069234/",
+  },
+  {
+    icon: Mail,
+    label: "Email",
+    href: "mailto:edubezerra_oliveira@hotmail.com",
+  },
 ];
 
 const footerLinks = [
-  { label: 'Home', path: '/' },
-  { label: 'Projetos', path: '/projects' },
-  { label: 'Sobre', path: '/about' },
-  { label: 'Contato', path: '/contact' },
+  { label: "Home", path: "/" },
+  { label: "Projetos", path: "/projects" },
+  { label: "Sobre", path: "/about" },
+  { label: "Contato", path: "/contact" },
 ];
 
 export function Footer() {
@@ -32,7 +44,7 @@ export function Footer() {
               </span>
             </Link>
             <p className="text-muted-foreground max-w-sm">
-              Criando sistemas escaláveis e experiências digitais memoráveis. 
+              Criando sistemas escaláveis e experiências digitais memoráveis.
               Transformando ideias em produtos reais.
             </p>
           </div>
@@ -50,7 +62,10 @@ export function Footer() {
                     className="text-muted-foreground hover:text-foreground transition-colors inline-flex items-center gap-1 group"
                   >
                     {link.label}
-                    <ArrowUpRight size={14} className="opacity-0 -translate-y-1 group-hover:opacity-100 group-hover:translate-y-0 transition-all" />
+                    <ArrowUpRight
+                      size={14}
+                      className="opacity-0 -translate-y-1 group-hover:opacity-100 group-hover:translate-y-0 transition-all"
+                    />
                   </Link>
                 </li>
               ))}
@@ -73,7 +88,10 @@ export function Footer() {
                   >
                     <link.icon size={16} />
                     {link.label}
-                    <ArrowUpRight size={14} className="opacity-0 -translate-y-1 group-hover:opacity-100 group-hover:translate-y-0 transition-all" />
+                    <ArrowUpRight
+                      size={14}
+                      className="opacity-0 -translate-y-1 group-hover:opacity-100 group-hover:translate-y-0 transition-all"
+                    />
                   </a>
                 </li>
               ))}
@@ -84,11 +102,6 @@ export function Footer() {
         {/* Bottom */}
         <div className="pt-8 border-t border-border flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-muted-foreground">
           <p>© {currentYear} Todos os direitos reservados.</p>
-          <p className="flex items-center gap-1">
-            Feito com
-            <span className="text-primary">♥</span>
-            e muito código
-          </p>
         </div>
       </div>
     </footer>

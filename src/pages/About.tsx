@@ -1,31 +1,86 @@
-import { motion } from 'framer-motion';
-import { Layout } from '@/components/layout/Layout';
-import { Badge } from '@/components/ui/badge';
-import { Button } from '@/components/ui/button';
-import { Link } from 'react-router-dom';
-import { ArrowRight, Code2, Lightbulb, Users, Rocket, Download } from 'lucide-react';
-import eduardoFoto from '@/assets/eduardo.jpg.asset.json';
+import { motion } from "framer-motion";
+import { Layout } from "@/components/layout/Layout";
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
+import {
+  ArrowRight,
+  Code2,
+  Lightbulb,
+  Users,
+  Rocket,
+  Download,
+} from "lucide-react";
+import eduardoFoto from "@/assets/eduardo.jpeg";
 
 const techStack = [
-  { category: 'Frontend', items: ['React', 'TypeScript', 'Next.js', 'TailwindCSS', 'Framer Motion', 'ViteJs'] },
-  { category: 'Backend', items: ['Node.js', 'Python', 'FastAPI', 'GraphQL', 'Java', 'JavaScript'] },
-  { category: 'Database', items: ['PostgreSQL', 'Supabase', 'SQL Server'] },
-  { category: 'Cloud & DevOps', items: ['Vercel', 'GitHub Actions'] },
-  { category: 'Design', items: ['Figma', 'Design Systems', 'UI/UX', 'Prototipagem'] },
+  {
+    category: "Frontend",
+    items: [
+      "React",
+      "TypeScript",
+      "Next.js",
+      "TailwindCSS",
+      "Framer Motion",
+      "ViteJs",
+    ],
+  },
+  {
+    category: "Backend",
+    items: ["Node.js", "Python", "FastAPI", "GraphQL", "Java", "JavaScript"],
+  },
+  { category: "Database", items: ["PostgreSQL", "Supabase", "SQL Server"] },
+  { category: "Cloud & DevOps", items: ["Vercel", "GitHub Actions"] },
+  {
+    category: "Design",
+    items: ["Figma", "Design Systems", "UI/UX", "Prototipagem"],
+  },
 ];
 
 const softSkills = [
-  { icon: Lightbulb, title: 'Pensamento Analítico', description: 'Decomponho problemas complexos em soluções elegantes' },
-  { icon: Users, title: 'Colaboração', description: 'Trabalho efetivamente com designers, PMs e stakeholders' },
-  { icon: Code2, title: 'Clean Code', description: 'Código legível, testável e de fácil manutenção' },
-  { icon: Rocket, title: 'Entrega', description: 'Foco em resultados e prazos realistas' },
+  {
+    icon: Lightbulb,
+    title: "Pensamento Analítico",
+    description: "Decomponho problemas complexos em soluções elegantes",
+  },
+  {
+    icon: Users,
+    title: "Colaboração",
+    description: "Trabalho efetivamente com designers, PMs e stakeholders",
+  },
+  {
+    icon: Code2,
+    title: "Clean Code",
+    description: "Código legível, testável e de fácil manutenção",
+  },
+  {
+    icon: Rocket,
+    title: "Entrega",
+    description: "Foco em resultados e prazos realistas",
+  },
 ];
 
 const timeline = [
-  { year: '2026', title: 'Full Stack Developer', description: 'Desenvolvendo produtos do zero ao deploy' },
-  { year: '2025', title: 'Frontend Developer', description: 'Especialização em React e experiência do usuário' },
-  { year: '2024', title: 'Formação em Desenvolvimento', description: 'Conclusão da formação acadêmica em desenvolvimento' },
-  { year: '2022', title: 'Início na Programação', description: 'Primeiros passos com desenvolvimento web' },
+  {
+    year: "2026",
+    title: "Full Stack Developer",
+    description: "Desenvolvendo produtos do zero ao deploy",
+  },
+  {
+    year: "2025",
+    title: "Frontend Developer",
+    description: "Especialização em React e experiência do usuário",
+  },
+  {
+    year: "2024",
+    title: "Formação em Desenvolvimento",
+    description: "Conclusão da formação acadêmica em desenvolvimento",
+  },
+  {
+    year: "2022",
+    title: "Início na Programação",
+    description: "Primeiros passos com desenvolvimento web",
+  },
 ];
 
 const About = () => {
@@ -45,21 +100,24 @@ const About = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
             >
-              <span className="text-primary font-mono text-sm mb-4 block">// Sobre mim</span>
+              <span className="text-primary font-mono text-sm mb-4 block">
+                // Sobre mim
+              </span>
               <h1 className="font-display text-4xl sm:text-5xl font-bold mb-6">
-                Desenvolvedor com{' '}
+                Desenvolvedor com{" "}
                 <span className="gradient-text">mentalidade de produto</span>
               </h1>
               <p className="text-muted-foreground text-lg mb-8 leading-relaxed">
-                Sou o Dudu um desenvolvedor Full Stack que acredita que código é apenas o meio — 
-                o fim é resolver problemas reais. Combino habilidades técnicas sólidas 
-                com pensamento de produto para criar soluções que realmente importam.
+                Sou o Dudu um desenvolvedor Full Stack que acredita que código é
+                apenas o meio — o fim é resolver problemas reais. Combino
+                habilidades técnicas sólidas com pensamento de produto para
+                criar soluções que realmente importam.
               </p>
               <p className="text-muted-foreground mb-8 leading-relaxed">
-                Minha abordagem é simples: entender profundamente o problema antes de 
-                escrever a primeira linha de código. Isso significa colaborar com 
-                stakeholders, questionar suposições e iterar rapidamente até 
-                encontrar a solução ideal.
+                Minha abordagem é simples: entender profundamente o problema
+                antes de escrever a primeira linha de código. Isso significa
+                colaborar com stakeholders, questionar suposições e iterar
+                rapidamente até encontrar a solução ideal.
               </p>
               <div className="flex flex-wrap gap-4">
                 <Button className="glow-sm" asChild>
@@ -85,12 +143,12 @@ const About = () => {
             >
               <div className="aspect-square rounded-3xl glass overflow-hidden">
                 <img
-                  src={eduardoFoto.url}
+                  src={eduardoFoto}
                   alt="Foto profissional de Eduardo"
                   className="w-full h-full object-cover"
                 />
               </div>
-              
+
               {/* Floating badges */}
               <motion.div
                 animate={{ y: [0, -10, 0] }}
@@ -99,13 +157,15 @@ const About = () => {
               >
                 <span className="font-mono text-sm text-primary">4+ anos</span>
               </motion.div>
-              
+
               <motion.div
                 animate={{ y: [0, 10, 0] }}
                 transition={{ duration: 5, repeat: Infinity }}
                 className="absolute -bottom-4 -left-4 glass rounded-xl p-3"
               >
-                <span className="font-mono text-sm text-primary">4+ projetos</span>
+                <span className="font-mono text-sm text-primary">
+                  4+ projetos
+                </span>
               </motion.div>
             </motion.div>
           </div>
@@ -122,12 +182,15 @@ const About = () => {
             transition={{ duration: 0.5 }}
             className="text-center mb-16"
           >
-            <span className="text-primary font-mono text-sm mb-4 block">// Stack</span>
+            <span className="text-primary font-mono text-sm mb-4 block">
+              // Stack
+            </span>
             <h2 className="font-display text-3xl sm:text-4xl font-bold mb-4">
               Tecnologias & <span className="gradient-text">Ferramentas</span>
             </h2>
             <p className="text-muted-foreground max-w-xl mx-auto">
-              As ferramentas que uso diariamente para transformar ideias em produtos
+              As ferramentas que uso diariamente para transformar ideias em
+              produtos
             </p>
           </motion.div>
 
@@ -167,12 +230,15 @@ const About = () => {
             transition={{ duration: 0.5 }}
             className="text-center mb-16"
           >
-            <span className="text-primary font-mono text-sm mb-4 block">// Soft Skills</span>
+            <span className="text-primary font-mono text-sm mb-4 block">
+              // Soft Skills
+            </span>
             <h2 className="font-display text-3xl sm:text-4xl font-bold mb-4">
               Além do <span className="gradient-text">Código</span>
             </h2>
             <p className="text-muted-foreground max-w-xl mx-auto">
-              Habilidades que fazem a diferença na entrega de projetos de sucesso
+              Habilidades que fazem a diferença na entrega de projetos de
+              sucesso
             </p>
           </motion.div>
 
@@ -189,8 +255,12 @@ const About = () => {
                 <div className="inline-flex p-3 rounded-xl bg-primary/10 mb-4">
                   <skill.icon size={24} className="text-primary" />
                 </div>
-                <h3 className="font-display font-semibold mb-2">{skill.title}</h3>
-                <p className="text-sm text-muted-foreground">{skill.description}</p>
+                <h3 className="font-display font-semibold mb-2">
+                  {skill.title}
+                </h3>
+                <p className="text-sm text-muted-foreground">
+                  {skill.description}
+                </p>
               </motion.div>
             ))}
           </div>
@@ -207,7 +277,9 @@ const About = () => {
             transition={{ duration: 0.5 }}
             className="text-center mb-16"
           >
-            <span className="text-primary font-mono text-sm mb-4 block">// Jornada</span>
+            <span className="text-primary font-mono text-sm mb-4 block">
+              // Jornada
+            </span>
             <h2 className="font-display text-3xl sm:text-4xl font-bold mb-4">
               Minha <span className="gradient-text">Evolução</span>
             </h2>
@@ -224,9 +296,15 @@ const About = () => {
                 className="relative pl-8 pb-12 last:pb-0 border-l border-border"
               >
                 <div className="absolute -left-2 top-0 w-4 h-4 rounded-full bg-primary glow-sm" />
-                <span className="text-primary font-mono text-sm">{item.year}</span>
-                <h3 className="font-display font-semibold text-lg mt-1">{item.title}</h3>
-                <p className="text-muted-foreground text-sm mt-1">{item.description}</p>
+                <span className="text-primary font-mono text-sm">
+                  {item.year}
+                </span>
+                <h3 className="font-display font-semibold text-lg mt-1">
+                  {item.title}
+                </h3>
+                <p className="text-muted-foreground text-sm mt-1">
+                  {item.description}
+                </p>
               </motion.div>
             ))}
           </div>
@@ -247,7 +325,7 @@ const About = () => {
               Pronto para <span className="gradient-text">conversar</span>?
             </h2>
             <p className="text-muted-foreground mb-8">
-              Se você tem um projeto em mente ou quer apenas bater um papo sobre 
+              Se você tem um projeto em mente ou quer apenas bater um papo sobre
               tecnologia, ficarei feliz em ouvir.
             </p>
             <Button size="lg" className="glow" asChild>
